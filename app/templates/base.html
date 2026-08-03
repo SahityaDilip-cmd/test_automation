@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}QA Practice App{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header class="site-header" data-testid="site-header">
+    <a class="brand" href="{{ url_for('home') }}" data-testid="brand-link">QA Practice App</a>
+    {% if username is defined and username %}
+    <nav class="nav" data-testid="main-nav">
+      <span class="user-chip" data-testid="session-user">{{ display_name }}</span>
+      <a href="{{ url_for('dashboard') }}" data-testid="nav-dashboard">Dashboard</a>
+      <a href="{{ url_for('new_task') }}" data-testid="nav-new-task">New Task</a>
+      <a href="{{ url_for('logout') }}" data-testid="nav-logout">Logout</a>
+    </nav>
+    {% endif %}
+  </header>
+
+  <main class="container" data-testid="main-content">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul class="flash-list" data-testid="flash-messages">
+          {% for category, message in messages %}
+            <li class="flash flash-{{ category }}" data-testid="flash-{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer" data-testid="site-footer">
+    <p>Practice target for UI · API · DB automation · SQLite file: <code>practice.db</code></p>
+  </footer>
+</body>
+</html>

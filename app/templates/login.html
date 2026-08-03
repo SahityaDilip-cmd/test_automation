@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Login | QA Practice App{% endblock %}
+{% block content %}
+<section class="panel" data-testid="login-page">
+  <h1 data-testid="login-heading">Sign in</h1>
+  <p class="subtitle">Demo app for UI, API, and database automation practice.</p>
+
+  <form method="post" action="{{ url_for('login') }}" data-testid="login-form" novalidate>
+    <label for="username">Username</label>
+    <input id="username" name="username" type="text" data-testid="username-input"
+           autocomplete="username" placeholder="admin or tester">
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" data-testid="password-input"
+           autocomplete="current-password" placeholder="Enter password">
+
+    <button type="submit" data-testid="login-button">Login</button>
+  </form>
+
+  <aside class="hint" data-testid="demo-credentials">
+    <p><strong>Demo users</strong></p>
+    <p>admin / admin123</p>
+    <p>tester / test123</p>
+  </aside>
+</section>
+{% endblock %}

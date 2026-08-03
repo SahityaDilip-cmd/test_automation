@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}New Task | QA Practice App{% endblock %}
+{% block content %}
+<section class="panel" data-testid="task-form-page">
+  <h1 data-testid="task-form-heading">Create Task</h1>
+  <p class="subtitle">Tasks are stored in SQLite and available via the REST API.</p>
+
+  <form method="post" action="{{ url_for('new_task') }}" data-testid="task-form" novalidate>
+    <label for="title">Title</label>
+    <input id="title" name="title" type="text" data-testid="title-input" placeholder="e.g. Verify login flow">
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" rows="4" data-testid="description-input"
+              placeholder="Optional details"></textarea>
+
+    <label for="status">Status</label>
+    <select id="status" name="status" data-testid="status-input">
+      <option value="open" selected>open</option>
+      <option value="in_progress">in_progress</option>
+      <option value="done">done</option>
+    </select>
+
+    <button type="submit" data-testid="submit-task">Save Task</button>
+  </form>
+</section>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Dashboard | QA Practice App{% endblock %}
+{% block content %}
+<section class="panel" data-testid="dashboard-page">
+  <div class="page-head">
+    <div>
+      <h1 data-testid="dashboard-heading">Dashboard</h1>
+      <p class="subtitle" data-testid="welcome-message">
+        Hello, <span data-testid="logged-in-user">{{ display_name }}</span>.
+      </p>
+    </div>
+    <a class="button" href="{{ url_for('new_task') }}" data-testid="create-task-button">Create Task</a>
+  </div>
+
+  {% if tasks %}
+  <table class="task-table" data-testid="task-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Status</th>
+        <th>Created</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for task in tasks %}
+      <tr data-testid="task-row-{{ task['id'] }}">
+        <td data-testid="task-id-{{ task['id'] }}">{{ task['id'] }}</td>
+        <td data-testid="task-title-{{ task['id'] }}">{{ task['title'] }}</td>
+        <td>
+          <span class="status status-{{ task['status'] }}" data-testid="task-status-{{ task['id'] }}">
+            {{ task['status'] }}
+          </span>
+        </td>
+        <td data-testid="task-created-{{ task['id'] }}">{{ task['created_at'] }}</td>
+        <td class="row-actions">
+          <form method="post" action="{{ url_for('update_status', task_id=task['id']) }}" class="inline-form">
+            <select name="status" data-testid="status-select-{{ task['id'] }}">
+              <option value="open" {% if task['status'] == 'open' %}selected{% endif %}>open</option>
+              <option value="in_progress" {% if task['status'] == 'in_progress' %}selected{% endif %}>in_progress</option>
+              <option value="done" {% if task['status'] == 'done' %}selected{% endif %}>done</option>
+            </select>
+            <button type="submit" data-testid="update-status-{{ task['id'] }}">Update</button>
+          </form>
+          <form method="post" action="{{ url_for('delete_task_ui', task_id=task['id']) }}" class="inline-form">
+            <button type="submit" class="button-danger" data-testid="delete-task-{{ task['id'] }}">Delete</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="empty" data-testid="empty-tasks">No tasks yet. Create one to get started.</p>
+  {% endif %}
+</section>
+{% endblock %}
