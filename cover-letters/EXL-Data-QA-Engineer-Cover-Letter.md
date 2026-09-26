@@ -1,9 +1,9 @@
 # Cover Letter — Data QA Engineer, EXL
 
 **Sahitya Dilip**  
-Dublin, County Dublin, Ireland  
-sahityad13@gmail.com  
-LinkedIn: [linkedin.com/in/sahitya-dilip-8b9466190](https://www.linkedin.com/in/sahitya-dilip-8b9466190)
+4 Meadow Green, Rowleys Lock, Navan, Co. Meath, C15 CD5T  
++353 89 952 9229 | sahityad13@gmail.com  
+[linkedin.com/in/sahitya-dilip-8b9466190](https://www.linkedin.com/in/sahitya-dilip-8b9466190)
 
 ---
 
@@ -15,21 +15,21 @@ Dublin, Republic of Ireland
 
 Dear Mistral Grundy / Hiring Team,
 
-I am writing to apply for the Data QA Engineer role in EXL’s Data Management / Insurance segment in Dublin. With over 10 years in software quality assurance — including my current role as Quality Assurance Lead at Empyrean Solutions — I specialise in making complex systems trustworthy through rigorous test design, SQL-backed validation, and clear quality reporting that supports informed release decisions.
+I am applying for the Data QA Engineer role in EXL’s Data Management / Insurance segment in Dublin. I am a Senior QA Engineer and QA Lead with 8+ years’ experience spanning UI automation, API and database validation, and end-to-end ETL / data-pipeline testing. I currently lead QA for enterprise banking applications at Empyrean DC Ireland Limited and am eligible to work in the Republic of Ireland.
 
-What draws me to this role is the mandate to own quality across data products: end-to-end pipeline and ETL validation, warehouse/data mart reconciliation, and operational monitoring of ingestion and refresh SLAs. That aligns closely with how I already work. At Empyrean and previously at HPE Aruba Networking, I have:
+Your role asks someone to own quality across data products — pipeline and ETL validation, warehouse / data mart reconciliation, and clear reporting that enables release decisions. That is the work I already do. At Empyrean I have:
 
-- Designed and executed test strategies across Agile/Scrum delivery, from sprint planning and estimation through regression, smoke, and release support  
-- Used strong SQL (joins, aggregations, data generation) to validate backend behaviour and test outcomes against expected results  
-- Performed database and API validation (Postman), including backend checks against AWS-backed stores such as RDS and DynamoDB  
-- Managed defects end-to-end in Jira, prioritised with engineering, and produced consolidated status reporting for stakeholders  
-- Built automation to reduce manual regression effort (Selenium/Java hybrid framework with a TDD approach) and am comfortable extending automation into pipeline-focused testing with Python and CI/CD integration  
+- Performed end-to-end validation of ETL pipelines built on Azure Databricks and Snowflake, verifying data completeness and consistency from source through transformation to reporting  
+- Executed SQL-based validation of transformation logic across multiple datasets and regression testing after ETL enhancements  
+- Partnered with Data Engineers to investigate and resolve data quality issues across ingestion, transformation, and reporting layers  
+- Developed reusable Playwright automation with Python and Pytest for critical workflows, and integrated QA delivery with Azure DevOps  
+- Led a team of five QA Engineers, defined test strategy and release readiness, and reduced defect leakage by 25% and defect resolution time by 30% through stronger process and triage  
 
-I am used to championing a quality-first mindset: clarifying requirements with product owners, surfacing gaps early, documenting defects thoroughly, and training others on process. I understand success in this role as you define it — visibility into test status and product quality, prioritised defects tracked to closure, fewer escaped defects, and stakeholder trust.
+Earlier, at Aruba Networks (Hewlett Packard Enterprise), I strengthened backend and API quality using Amazon RDS, DynamoDB, InfluxDB, and Postman, and coordinated QA across multiple Scrum teams for production and hotfix releases. Across Banking, Healthcare, and Networking domains I have built the habit your success criteria describe: visible test status, prioritised defects tracked to closure, and stakeholder trust grounded in accurate quality data.
 
-I am based in Dublin and eligible to work in the Republic of Ireland. I would welcome the chance to discuss how my QA leadership, SQL/data validation experience, and AWS-aware testing background can help EXL deliver reliable, accurate data products for insurance clients.
+I bring strong SQL skills, hands-on data-pipeline and warehouse validation, Python automation, Agile delivery experience, and familiarity with Jira, TestRail, and Azure DevOps — closely aligned with the essentials listed for this role. I am keen to apply that foundation to EXL’s AWS-centred data stack (S3, Glue, Lambda, Redshift, and related services) and help deliver reliable, accurate data products for insurance clients.
 
-Thank you for your time and consideration.
+Thank you for your consideration. I would welcome the opportunity to discuss how I can contribute to EXL’s data quality agenda in Dublin.
 
 Yours sincerely,  
 **Sahitya Dilip**
@@ -40,26 +40,27 @@ Yours sincerely,
 
 ```
 Sahitya Dilip
-Dublin, County Dublin, Ireland
-sahityad13@gmail.com
+4 Meadow Green, Rowleys Lock, Navan, Co. Meath, C15 CD5T
++353 89 952 9229 | sahityad13@gmail.com
+linkedin.com/in/sahitya-dilip-8b9466190
 
 Dear Mistral Grundy / Hiring Team,
 
-I am writing to apply for the Data QA Engineer role in EXL’s Data Management / Insurance segment in Dublin. With over 10 years in software quality assurance — including my current role as Quality Assurance Lead at Empyrean Solutions — I specialise in making complex systems trustworthy through rigorous test design, SQL-backed validation, and clear quality reporting that supports informed release decisions.
+I am applying for the Data QA Engineer role in EXL’s Data Management / Insurance segment in Dublin. I am a Senior QA Engineer and QA Lead with 8+ years’ experience spanning UI automation, API and database validation, and end-to-end ETL / data-pipeline testing. I currently lead QA for enterprise banking applications at Empyrean DC Ireland Limited and am eligible to work in the Republic of Ireland.
 
-What draws me to this role is the mandate to own quality across data products: end-to-end pipeline and ETL validation, warehouse/data mart reconciliation, and operational monitoring of ingestion and refresh SLAs. That aligns closely with how I already work. At Empyrean and previously at HPE Aruba Networking, I have:
+Your role asks someone to own quality across data products — pipeline and ETL validation, warehouse / data mart reconciliation, and clear reporting that enables release decisions. That is the work I already do. At Empyrean I have:
 
-• Designed and executed test strategies across Agile/Scrum delivery, from sprint planning and estimation through regression, smoke, and release support
-• Used strong SQL (joins, aggregations, data generation) to validate backend behaviour and test outcomes against expected results
-• Performed database and API validation (Postman), including backend checks against AWS-backed stores such as RDS and DynamoDB
-• Managed defects end-to-end in Jira, prioritised with engineering, and produced consolidated status reporting for stakeholders
-• Built automation to reduce manual regression effort (Selenium/Java hybrid framework with a TDD approach) and am comfortable extending automation into pipeline-focused testing with Python and CI/CD integration
+• Performed end-to-end validation of ETL pipelines built on Azure Databricks and Snowflake, verifying data completeness and consistency from source through transformation to reporting
+• Executed SQL-based validation of transformation logic across multiple datasets and regression testing after ETL enhancements
+• Partnered with Data Engineers to investigate and resolve data quality issues across ingestion, transformation, and reporting layers
+• Developed reusable Playwright automation with Python and Pytest for critical workflows, and integrated QA delivery with Azure DevOps
+• Led a team of five QA Engineers, defined test strategy and release readiness, and reduced defect leakage by 25% and defect resolution time by 30% through stronger process and triage
 
-I am used to championing a quality-first mindset: clarifying requirements with product owners, surfacing gaps early, documenting defects thoroughly, and training others on process. I understand success in this role as you define it — visibility into test status and product quality, prioritised defects tracked to closure, fewer escaped defects, and stakeholder trust.
+Earlier, at Aruba Networks (Hewlett Packard Enterprise), I strengthened backend and API quality using Amazon RDS, DynamoDB, InfluxDB, and Postman, and coordinated QA across multiple Scrum teams for production and hotfix releases. Across Banking, Healthcare, and Networking domains I have built the habit your success criteria describe: visible test status, prioritised defects tracked to closure, and stakeholder trust grounded in accurate quality data.
 
-I am based in Dublin and eligible to work in the Republic of Ireland. I would welcome the chance to discuss how my QA leadership, SQL/data validation experience, and AWS-aware testing background can help EXL deliver reliable, accurate data products for insurance clients.
+I bring strong SQL skills, hands-on data-pipeline and warehouse validation, Python automation, Agile delivery experience, and familiarity with Jira, TestRail, and Azure DevOps — closely aligned with the essentials listed for this role. I am keen to apply that foundation to EXL’s AWS-centred data stack (S3, Glue, Lambda, Redshift, and related services) and help deliver reliable, accurate data products for insurance clients.
 
-Thank you for your time and consideration.
+Thank you for your consideration. I would welcome the opportunity to discuss how I can contribute to EXL’s data quality agenda in Dublin.
 
 Yours sincerely,
 Sahitya Dilip
